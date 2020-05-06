@@ -29,7 +29,7 @@ TARGET_SCREEN_WIDTH := 720
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
-    $(LOCAL_PATH)/overlay-lineage
+
 
 # Properties
 -include $(LOCAL_PATH)/system_prop.mk
