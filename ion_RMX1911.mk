@@ -15,6 +15,15 @@
 $(call inherit-product, device/realme/RMX1911/device.mk)
 $(call inherit-product, vendor/ion/config/common_full_phone.mk)
 
+ION_BUILD_TYPE := OFFICIAL
+ION_RELEASE_TYPE := Release
+
+TARGET_GAPPS_ARCH := arm64
+
+# Ion maintainer
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.ion.maintainer=Abhishek raut
+    
 # Device identifier. This must come after all inclusions.
 PRODUCT_BRAND := realme
 PRODUCT_DEVICE := RMX1911
