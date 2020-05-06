@@ -18,7 +18,7 @@ $(call inherit-product, vendor/ion/config/common_full_phone.mk)
 ION_BUILD_TYPE := OFFICIAL
 ION_RELEASE_TYPE := Release
 
-TARGET_GAPPS_ARCH := arm64
+TARGET_G_ARCH := arm64
 
 # Ion maintainer
 PRODUCT_PROPERTY_OVERRIDES += \
