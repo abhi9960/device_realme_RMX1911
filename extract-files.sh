@@ -1,6 +1,6 @@
 #!/bin/bash
 #
-# Copyright (C) 2019 ArrowOS
+# Copyright (C) 2019 IonOS
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -24,9 +24,9 @@ VENDOR=realme
 MY_DIR="${BASH_SOURCE%/*}"
 if [[ ! -d "${MY_DIR}" ]]; then MY_DIR="${PWD}"; fi
 
-ARROW_ROOT="${MY_DIR}"/../../..
+ION_ROOT="${MY_DIR}"/../../..
 
-HELPER="${ARROW_ROOT}/vendor/arrow/build/tools/extract_utils.sh"
+HELPER="${ION_ROOT}/vendor/ion/build/tools/extract_utils.sh"
 if [ ! -f "${HELPER}" ]; then
     echo "Unable to find helper script at ${HELPER}"
     exit 1
@@ -55,7 +55,7 @@ if [ -z "${SRC}" ]; then
 fi
 
 # Initialize the helper for common device
-setup_vendor "${DEVICE}" "${VENDOR}" "${ARROW_ROOT}" true "${CLEAN_VENDOR}"
+setup_vendor "${DEVICE}" "${VENDOR}" "${ION_ROOT}" true "${CLEAN_VENDOR}"
 
 extract "${MY_DIR}/proprietary-files.txt" "${SRC}" "$SECTION"
 
