@@ -1,4 +1,4 @@
-# Copyright (C) 2019 ArrowOS
+# Copyright (C) 2019 IonoOS
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -13,14 +13,14 @@
 # limitations under the License.
 
 $(call inherit-product, device/realme/RMX1911/device.mk)
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/ion/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions.
 PRODUCT_BRAND := realme
 PRODUCT_DEVICE := RMX1911
 PRODUCT_MANUFACTURER := realme
 PRODUCT_MODEL := Realme 5
-PRODUCT_NAME := lineage_RMX1911
+PRODUCT_NAME := ion_RMX1911
 
 PRODUCT_GMS_CLIENTID_BASE := android-realme
 
