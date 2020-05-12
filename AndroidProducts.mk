@@ -15,4 +15,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/ion_RMX1911.mk
+    $(LOCAL_DIR)/ancient_RMX1911.mk
